@@ -1,5 +1,19 @@
-p-menubar{
+:host ::ng-deep p-menubarsub {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
+}
+
+:host ::ng-deep .p-menuitem-text { 
+    color: white;
+}
+
+:host ::ng-deep .p-menuitem-icon {
+    color: white;
+}
+
+:host ::ng-deep .p-menuitem {
+
+}
+
+img {
+    height: 69px;
 }

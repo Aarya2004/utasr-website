@@ -1,0 +1,18 @@
+<div class="card bg-utasr-blue">
+    <p-galleria 
+    [value]="images"
+    [autoPlay]="true" 
+    [numVisible]="2" 
+    [circular]="true" 
+    [showItemNavigators]="true" 
+    [showThumbnails]="false">
+        <ng-template pTemplate="item" let-item> 
+            <img 
+                [src]="item.src"  
+                [alt]="item.alt"  
+                [title]="item.title"  
+                style="width: 50%;" 
+            /> 
+        </ng-template>
+    </p-galleria>
+</div>

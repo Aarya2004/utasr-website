@@ -10,30 +10,31 @@ import { MenubarModule } from 'primeng/menubar';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent implements OnInit {
-  items: MenuItem[] | undefined;
+  navitems: MenuItem[] | undefined;
 
     ngOnInit() {
-        this.items = [
-            {
-                label: 'Home',
-                icon: 'pi pi-home'
-            },
-            {
-                label: 'About Us',
-                icon: 'pi pi-question-circle'
-            },
-            {
-                label: 'Projects',
-                icon: 'pi pi-stopwatch',
-            },
-            {
-              label: 'Members',
-              icon: 'pi pi-users',
-            },
-            {
-                label: 'Contact',
-                icon: 'pi pi-envelope'
-            }
+        this.navitems = [
+          {
+              label: 'Home',
+              icon: 'pi pi-home',
+              style: {'margin-left': 'auto'}
+          },
+          {
+              label: 'About Us',
+              icon: 'pi pi-question-circle'
+          },
+          {
+              label: 'Projects',
+              icon: 'pi pi-stopwatch'
+          },
+          {
+            label: 'Members',
+            icon: 'pi pi-users'
+          },
+          {
+              label: 'Contact',
+              icon: 'pi pi-envelope'
+          }
         ]
     }
 }
