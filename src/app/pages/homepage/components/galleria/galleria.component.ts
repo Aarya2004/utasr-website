@@ -22,14 +22,29 @@ export class GalleriaComponent implements OnInit {
   ngOnInit(){
     this.images = [
       {
-        src: "/UTASRlogo_B_NBkgnd.png",
-        alt: "Logo without Backgnd",
-        title: "Logo w/o Background"
+        src: "/galleriaAssets/CAR1.jpg",
+        alt: "Car UT-00 Pic1",
+        title: "Car UT-00 Pic1"
       },
       {
-        src: "/UTASRlogo.png",
-        alt: "Logo with Backgnd",
-        title: "Logo"
+        src: "/galleriaAssets/CAR2.jpg",
+        alt: "Car UT-00 Pic2",
+        title: "Car UT-00 Pic2"
+      },
+      {
+        src: "/galleriaAssets/CAR4.jpg",
+        alt: "Car UT-00 Pic3",
+        title: "Car UT-00 Pic3"
+      },
+      { 
+        src: "/galleriaAssets/CAR7.jpg",
+        alt: "Car UT-00 Pic4",
+        title: "Car UT-00 Pic4"
+      },
+      {
+        src: "/galleriaAssets/GIF.gif",
+        alt: "GIF of car",
+        title: "GIF of car"
       }
     ];
   }
