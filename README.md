@@ -2,6 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
+* Use `npm i` to download the required node dependencies before running the server as below
+
+## Run Website
+
+Use command `npm start` to start website on localhost.
+
+------------------------------------- TODO -------------------------------------
+
+[] Fix links in Navbar
+[] Update hero image
+[X] Add about us paragraph
+[] Add about us Picture
+[] Update Galleria pics (Carousel)
+[] Update Club Roster Images
+[] Remove Sponsor section
+[] Add email and other contact info
+[] Fix title of website
+[] Fix hover color in navbar
+[] Make footer into sections with horizontal bar (icons + copyright + logo)
+[] SVG for logo in navbar so logo isn’t stretched
+
+------------------------------------- EXTRA -------------------------------------
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
