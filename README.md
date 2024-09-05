@@ -10,18 +10,18 @@ Use command `npm start` to start website on localhost.
 
 ------------------------------------- TODO -------------------------------------
 
-- [] Fix links in Navbar
-- [] Update hero image
+- [ ] Fix links in Navbar
+- [ ] Update hero image
 - [X] Add about us paragraph
-- [] Add about us Picture
-- [] Update Galleria pics (Carousel)
-- [] Update Club Roster Images
-- [] Remove Sponsor section
-- [] Add email and other contact info
-- [] Fix title of website
-- [] Fix hover color in navbar
-- [] Make footer into sections with horizontal bar (icons + copyright + logo)
-- [] SVG for logo in navbar so logo isn’t stretched
+- [ ] Add about us Picture
+- [ ] Update Galleria pics (Carousel)
+- [ ] Update Club Roster Images
+- [ ] Remove Sponsor section
+- [ ] Add email and other contact info
+- [ ] Fix title of website
+- [ ] Fix hover color in navbar
+- [ ] Make footer into sections with horizontal bar (icons + copyright + logo)
+- [ ] SVG for logo in navbar so logo isn’t stretched
 
 ------------------------------------- EXTRA -------------------------------------
 ## Development server
