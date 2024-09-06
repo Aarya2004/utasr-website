@@ -7,8 +7,14 @@ import { GalleriaComponent } from './components/galleria/galleria.component';
   standalone: true,
   imports: [NavbarComponent, GalleriaComponent],
   templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+  styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
 
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

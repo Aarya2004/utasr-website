@@ -1,28 +1,94 @@
 <div>
-    <app-navbar></app-navbar>
+    <app-navbar (navItemClicked)="scrollToSection($event)"></app-navbar>
 </div>
-<div class="card relative bg-slate-200 h-[900px]">
-    <img src="/hero.jpg" class="absolute h-full w-full" />
-    <img src="/UTASRlogo_B_NBkgnd.png" class="absolute h-40 bottom-20 left-0"/>
+
+<section id="home">
+<div class="w-full h-screen relative" style="background-image: url('/hero.jpg'); background-position: 50% 60%; background-size: cover; background-repeat: no-repeat;">
+    <img src="/RHINO_Mk.1.png" class="absolute bottom-20 right-0 w-[50vw] h-auto" />
 </div>
-<div class="card relative h-[400px]">
-    <div class="absolute top-16 left-10 w-1/2">
-        <h2 class="text-5xl">About us</h2>
-        <p class="mt-3">
-            An Autonomous RC racing initiative founded by computer science and engineering students aiming to develop intelligent interactive autonomy in scale RC cars. Using techniques in imitation learning, distillation, model based reinforcement learning to enable the race car to learn interpretable representations of the world, predict future trajectories and choose the best course of actions, acting intelligently against competitors and prevent unwanted events from happening.
-        </p>
+</section>
+
+<section id="about">
+<!-- Container for the textbox and image side by side -->
+<div class="flex flex-col md:flex-row justify-top items-center space-y-4 md:space-y-0 md:space-x-4 h-auto mt-10 p-4">
+    <!-- Text box -->
+    <div class="w-full md:w-1/2">
+        <div class="card relative p-6"> <!-- Removed fixed height -->
+            <div class="w-full p-6"> <!-- Adjusted padding and removed width limit -->
+                <h2 class="text-5xl">About us</h2>
+                <p class="mt-3">
+                    An autonomous RC racing initiative founded by computer science and engineering students aiming to develop intelligent interactive autonomy in scale RC cars. Using techniques in imitation learning, distillation, model-based reinforcement learning to enable the race car to learn interpretable representations of the world, predict future trajectories, and choose the best course of action, acting intelligently against competitors and preventing unwanted events.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2 p-6">
+        <img src="/UTASRlogo_B_NBkgnd.png" alt="Logo - UTASR" class="w-full h-auto" />
     </div>
 </div>
+</section>
+
+<section id="rhino">
+<div class="relative w-full bg-light-gray py-20 bg-gray-200">
+    <div class="absolute inset-0 flex justify-center items-center">
+        <div class="p-6">
+            <img src="/RHINO_Mk.1.png" class="w-[50vw] h-auto" alt="RHINO Mk.1"/>
+        </div>
+    </div>
+</div>
+
 <app-galleria></app-galleria>
-<div class="card relative text-center h-[100px]">
-    <h1 class="text-6xl mt-20">Club Roster Imgs</h1>
-</div>
-<div class="card relative text-center h-[100px] bg-slate-200">
-    <h1 class="text-2xl pt-8">Sponsor Logos</h1>
-</div>
-<div class="card relative text-center h-[125px] bg-black">
-    <div class="pt-2.5">
-        <i class="pi pi-instagram text-white pr-2" style="font-size: 2rem"></i>
-        <i class="pi pi-linkedin text-white" style="font-size: 2rem"></i>
+</section>
+
+<section id="join">
+<section class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Join Us!</h2>
+        <p class="text-lg">Be a part of our community and contribute to exciting projects.</p>
+        <p class="mb-8 text-lg">Sign up or join us on Discord to get started!</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <!-- Signup Button -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO-kyLJ11bg95EcIExzLE2L4lXXNvFpNfx6wLOerqe3YSCiw/viewform" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                Sign Up
+            </a>
+            
+            <!-- Discord Button -->
+            <a href="https://discord.gg/X4bgq6J9" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                Join Our Discord
+            </a>
+        </div>
     </div>
-</div>
+</section>
+
+
+<img src="/skule-logo.png" alt="Skule-logo" class="block mx-auto my-20 h-16 w-auto" />
+
+<section id="contact"></section>
+<footer class="bg-gray-800 text-white py-10 relative w-full">
+    <div class="border-t border-gray-600 absolute top-0 left-0 w-full"></div>
+
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex flex-col space-y-2">
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/utasr_uoft/" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-instagram" style="font-size: 2rem"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+                </a>
+                <a href="https://discord.gg/X4bgq6J9" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-discord" style="font-size: 2rem"></i>
+                </a>
+            </div>
+
+            <!-- Copyright Text -->
+            <p class="text-sm">&copy; 2024 UTASR. All rights reserved.</p>
+        </div>
+
+        <div class="flex-shrink-0">
+            <img src="/UTASRlogo.png" alt="Logo" class="h-16 w-auto">
+        </div>
+    </div>
+</footer>

@@ -16,37 +16,22 @@ interface ImageObject {
 })
 
 export class GalleriaComponent implements OnInit {
-  // ****************** Placeholder images ******************
-  images: ImageObject[] | undefined;
-  
-  ngOnInit(){
+  images: ImageObject[] = [];
+
+  ngOnInit() {
+    // Dynamically generate images from CAR0 to CAR11
     this.images = [
       {
-        src: "/galleriaAssets/CAR1.jpg",
-        alt: "Car UT-00 Pic1",
-        title: "Car UT-00 Pic1"
-      },
-      {
-        src: "/galleriaAssets/CAR2.jpg",
-        alt: "Car UT-00 Pic2",
-        title: "Car UT-00 Pic2"
-      },
-      {
-        src: "/galleriaAssets/CAR4.jpg",
-        alt: "Car UT-00 Pic3",
-        title: "Car UT-00 Pic3"
-      },
-      { 
-        src: "/galleriaAssets/CAR7.jpg",
-        alt: "Car UT-00 Pic4",
-        title: "Car UT-00 Pic4"
-      },
-      {
-        src: "/galleriaAssets/GIF.gif",
-        alt: "GIF of car",
-        title: "GIF of car"
-      }
-    ];
+        src: "/galleriaAssets/CAR12.gif",
+        alt: "Car Pic12",
+        title: "Rhino Image 12"
+      }];
+    for (let i = 0; i <= 11; i++) {
+      this.images.push({
+        src: `/galleriaAssets/CAR${i}.jpg`,
+        alt: `Car Pic${i}`,
+        title: `Rhino Image ${i}`
+      });
+    }
   }
-
 }
