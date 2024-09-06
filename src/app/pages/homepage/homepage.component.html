@@ -7,14 +7,14 @@
 
 
 <!-- Container for the textbox and image side by side -->
-<div class="flex flex-col md:flex-row justify-top items-center space-y-4 md:space-y-0 md:space-x-4 h-[800px] mt-10 p4">
+<div class="flex flex-col md:flex-row justify-top items-center space-y-4 md:space-y-0 md:space-x-4 h-auto mt-10 p-4">
     <!-- Text box -->
-    <div class="w-full md:w-1/2 p-4">
-        <div class="card relative h-[400px]">
-            <div class="absolute top-16 left-10 w-full p-2">
+    <div class="w-full md:w-1/2">
+        <div class="card relative p-6"> <!-- Removed fixed height -->
+            <div class="w-full p-6"> <!-- Adjusted padding and removed width limit -->
                 <h2 class="text-5xl">About us</h2>
                 <p class="mt-3">
-                    An Autonomous RC racing initiative founded by computer science and engineering students aiming to develop intelligent interactive autonomy in scale RC cars. Using techniques in imitation learning, distillation, model-based reinforcement learning to enable the race car to learn interpretable representations of the world, predict future trajectories, and choose the best course of action, acting intelligently against competitors and preventing unwanted events.
+                    An autonomous RC racing initiative founded by computer science and engineering students aiming to develop intelligent interactive autonomy in scale RC cars. Using techniques in imitation learning, distillation, model-based reinforcement learning to enable the race car to learn interpretable representations of the world, predict future trajectories, and choose the best course of action, acting intelligently against competitors and preventing unwanted events.
                 </p>
             </div>
         </div>
@@ -26,12 +26,14 @@
     </div>
 </div>
 
+
+
 <app-galleria></app-galleria>
 
-<img src="/skule-logo.png" alt="Skule -logo" class="display: block; margin: 0 auto; height: 2%; width: auto;" />
+<img src="/skule-logo.png" alt="Skule-logo" class="block mx-auto my-20 h-16 w-auto" />
 
 
-<footer class="bg-gray-800 text-white py-10 relative">
+<footer class="bg-gray-800 text-white py-10 relative w-full">
     <div class="border-t border-gray-600 absolute top-0 left-0 w-full"></div>
 
     <div class="container mx-auto flex justify-between items-center">
