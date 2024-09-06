@@ -9,19 +9,19 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-    steps:
+        steps:
         - name: Checkout Repository
-        uses: actions/checkout@v2
+          uses: actions/checkout@v2
 
         - name: Adding Node.js
-        uses: actions/setup-node@v2
+          uses: actions/setup-node@v2
 
         - name: Install Dependencies
-        run: npm install
+          run: npm install
 
         - name: Build Angular App
-        run: npm run build
+          run: npm run build
 
         - name: Deploy to gh pages
-        run: |
-            npx angular-cli-ghpages --dir=dist/UTASR/browser
+          run: |
+                npx angular-cli-ghpages --dir=dist/UTASR/browser
