@@ -3,7 +3,8 @@
     [value]="images"
     [autoPlay]="true" 
     [numVisible]="2" 
-    [circular]="true" 
+    [circular]="true"
+    [transitionInterval]="10000"
     [showItemNavigators]="true" 
     [showThumbnails]="false">
         <ng-template pTemplate="item" let-item> 
@@ -11,7 +12,7 @@
                 [src]="item.src"  
                 [alt]="item.alt"  
                 [title]="item.title"  
-                style="width: 50%;" 
+                class="gallery-image"
             /> 
         </ng-template>
     </p-galleria>
