@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
               icon: 'pi pi-question-circle'
           },
           {
-              label: 'Images',
+              label: 'Rhino',
               icon: 'pi pi-image'
           },
           {
