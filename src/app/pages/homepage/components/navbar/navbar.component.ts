@@ -16,24 +16,19 @@ export class NavbarComponent implements OnInit {
         this.navitems = [
           {
               label: 'Home',
-              icon: 'pi pi-home',
               style: {'margin-left': 'auto'}
           },
           {
-              label: 'About Us',
-              icon: 'pi pi-question-circle'
+              label: 'About Us'
           },
           {
-              label: 'Rhino',
-              icon: 'pi pi-image'
+              label: 'Rhino'
           },
           {
-            label: 'Members',
-            icon: 'pi pi-users'
+            label: 'Members'
           },
           {
-              label: 'Contact',
-              icon: 'pi pi-envelope'
+              label: 'Contact'
           }
         ]
     }
