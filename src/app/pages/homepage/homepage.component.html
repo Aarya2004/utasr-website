@@ -1,11 +1,14 @@
 <div>
-    <app-navbar></app-navbar>
+    <app-navbar (navItemClicked)="scrollToSection($event)"></app-navbar>
 </div>
+
+<section id="home">
 <div class="w-full h-screen relative" style="background-image: url('/hero.jpg'); background-position: 50% 60%; background-size: cover; background-repeat: no-repeat;">
     <img src="/RHINO_Mk.1.png" class="absolute bottom-20 right-0 w-[50vw] h-auto" />
 </div>
+</section>
 
-
+<section id="about">
 <!-- Container for the textbox and image side by side -->
 <div class="flex flex-col md:flex-row justify-top items-center space-y-4 md:space-y-0 md:space-x-4 h-auto mt-10 p-4">
     <!-- Text box -->
@@ -25,7 +28,9 @@
         <img src="/UTASRlogo_B_NBkgnd.png" alt="Logo - UTASR" class="w-full h-auto" />
     </div>
 </div>
+</section>
 
+<section id="rhino">
 <div class="relative w-full bg-light-gray py-20 bg-gray-200">
     <div class="absolute inset-0 flex justify-center items-center">
         <div class="p-6">
@@ -34,10 +39,10 @@
     </div>
 </div>
 
-
-
 <app-galleria></app-galleria>
+</section>
 
+<section id="join">
 <section class="bg-gray-800 text-white py-12">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6">Join Us!</h2>
@@ -60,7 +65,7 @@
 
 <img src="/skule-logo.png" alt="Skule-logo" class="block mx-auto my-20 h-16 w-auto" />
 
-
+<section id="contact"></section>
 <footer class="bg-gray-800 text-white py-10 relative w-full">
     <div class="border-t border-gray-600 absolute top-0 left-0 w-full"></div>
 
