@@ -2,7 +2,7 @@
     <app-navbar></app-navbar>
 </div>
 <div class="w-full h-screen relative" style="background-image: url('/hero.jpg'); background-position: 50% 60%; background-size: cover; background-repeat: no-repeat;">
-    <img src="/UTASRlogo_B_NBkgnd.png" class="absolute h-40 bottom-20 right-0"/>
+    <img src="/RHINO_Mk.1.png" class="absolute bottom-20 right-0 w-[50vw] h-auto" />
 </div>
 
 
@@ -26,9 +26,37 @@
     </div>
 </div>
 
+<div class="relative w-full bg-light-gray py-20 bg-gray-200">
+    <div class="absolute inset-0 flex justify-center items-center">
+        <div class="p-6">
+            <img src="/RHINO_Mk.1.png" class="w-[50vw] h-auto" alt="RHINO Mk.1"/>
+        </div>
+    </div>
+</div>
+
 
 
 <app-galleria></app-galleria>
+
+<section class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Join Us!</h2>
+        <p class="text-lg">Be a part of our community and contribute to exciting projects.</p>
+        <p class="mb-8 text-lg">Sign up or join us on Discord to get started!</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <!-- Signup Button -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO-kyLJ11bg95EcIExzLE2L4lXXNvFpNfx6wLOerqe3YSCiw/viewform" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                Sign Up
+            </a>
+            
+            <!-- Discord Button -->
+            <a href="https://discord.gg/X4bgq6J9" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                Join Our Discord
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <img src="/skule-logo.png" alt="Skule-logo" class="block mx-auto my-20 h-16 w-auto" />
 
@@ -39,8 +67,15 @@
     <div class="container mx-auto flex justify-between items-center">
         <div class="flex flex-col space-y-2">
             <div class="flex space-x-4">
-                <i class="pi pi-instagram" style="font-size: 2rem"></i>
-                <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+                <a href="https://www.instagram.com/utasr_uoft/" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-instagram" style="font-size: 2rem"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+                </a>
+                <a href="https://discord.gg/X4bgq6J9" target="_blank" rel="noopener noreferrer">
+                    <i class="pi pi-discord" style="font-size: 2rem"></i>
+                </a>
             </div>
 
             <!-- Copyright Text -->
@@ -52,4 +87,3 @@
         </div>
     </div>
 </footer>
-
