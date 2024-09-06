@@ -6,12 +6,8 @@
     color: white;
 }
 
-:host ::ng-deep .p-menuitem-icon {
-    color: white;
-}
-
 :host ::ng-deep .p-menuitem {
-
+    
 }
 
 img {

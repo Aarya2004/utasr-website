@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
               label: 'Rhino'
           },
           {
-            label: 'Members'
+              label: 'Members'
           },
           {
               label: 'Contact'
