@@ -32,7 +32,7 @@ jobs:
 
         - name: Deploy to gh pages
           run: |
-                npx angular-cli-ghpages --no-silent --name="GitHub Actions Bot" --email=github-actions-bot@users.noreply.github.com --dir=dist/utasr-website
+                npx angular-cli-ghpages --no-silent --base-href=https://aarya2004.github.io/utasr-website/ --name="GitHub Actions Bot" --email=github-actions-bot@users.noreply.github.com --dir=dist/utasr-website
           env:
             CI: true
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
